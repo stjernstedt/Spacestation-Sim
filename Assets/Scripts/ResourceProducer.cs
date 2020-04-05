@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourceProducer : MonoBehaviour
 {
-	GameObject core;
+	Resources resources;
 	public ResourceTypes type;
 
 	float timePassed;
@@ -12,7 +12,7 @@ public class ResourceProducer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		core = FindObjectOfType<Core>().gameObject;
+		resources = GetComponentInParent<Resources>();
     }
 
     // Update is called once per frame
@@ -28,6 +28,6 @@ public class ResourceProducer : MonoBehaviour
 
 	void ProduceResource()
 	{
-		core.GetComponent<Resources>().AddResource(type, 1);
+		resources.AddResource(type, 1);
 	}
 }

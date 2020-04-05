@@ -5,7 +5,8 @@ using UnityEngine;
 public enum ResourceTypes
 {
 	food,
-	fertilizer
+	fertilizer,
+	electronics
 }
 
 public class Resources : MonoBehaviour
@@ -13,6 +14,7 @@ public class Resources : MonoBehaviour
 
 	public int food;
 	public int fertilizer;
+	public int electronics;
 
 
 	// Start is called before the first frame update
@@ -35,6 +37,10 @@ public class Resources : MonoBehaviour
 				food += amount;
 				break;
 			case ResourceTypes.fertilizer:
+				fertilizer += amount;
+				break;
+			case ResourceTypes.electronics:
+				electronics += amount;
 				break;
 			default:
 				break;
