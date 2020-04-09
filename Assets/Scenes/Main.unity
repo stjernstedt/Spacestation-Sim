@@ -1461,3 +1461,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5750682399452575772}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5750682399452575776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750682399452575773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446567bf5396be4428a2e450d76ca9b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
